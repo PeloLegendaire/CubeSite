@@ -1,0 +1,178 @@
+:root {
+    --svg-color: #FFFFFF;
+    --background-color: #112378;
+    --cube-color: #FBECCF;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--background-color);
+    background: var(--background-color);
+}
+
+body {
+    margin: 0;
+}
+
+#menu {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+
+#menu div {
+    height: 16%;
+    padding-top: 20%;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    flex: 1 1 calc(100%);
+    font-size: 1.3vw;
+    text-align: center;
+    cursor: pointer;
+    color: var(--cube-color);
+    transition: .6s;
+}
+
+#menu div:hover {
+    transform: translateX(10%);
+}
+
+#color_button {
+    position: absolute;
+    top: 5vh;
+    left: 95vw;
+    height: 4vh;
+    width: 4vw;
+    cursor: pointer;
+}
+
+#color_button path {
+    fill: var(--svg-color);
+}
+
+#tab_synth {
+    cursor: pointer;
+    position: absolute;
+    top: 93vh;
+    left: 87vw;
+    padding: 0.5vw;
+    background-color: transparent;
+    color: var(--svg-color);
+    border: 0.01vw solid var(--svg-color);
+    border-radius: 1vw;
+    font-size: 1vw;
+    transition: 1s;
+}
+
+#tab_synth:hover {
+    transform: scale(1.1);
+}
+
+#perspective_cube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8vh;
+    left: 15vw;
+    width: 60vw;
+    height: 85vh;
+    perspective: 1000px;
+}
+
+#container {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    width: 28vw;
+    height: 28vw;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+
+.face_cube {
+    padding: 0.5vw 0.5vh;
+    text-align: center;
+    position: absolute;
+    width: 28vw;
+    height: 28vw;
+    backface-visibility: hidden;
+    background-color: var(--cube-color);
+    transition: transform 1s;
+}
+
+.face_cube p {
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.face_cube a {
+    color: var(--background-color);
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    
+}
+
+.face_cube table {
+    font-size: 9px;
+    width: 100%;
+    margin-top: 5%;
+    border-collapse: collapse;
+}
+
+.face_cube tr {
+    height: 1.7vw;
+}
+
+.face_cube td, th {
+    width: 33%;
+    border: .01vw solid var(--background-color);
+    font-size: .8vw;
+}
+
+#perspective_title {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    left: 80%;
+    width: 5%;
+    height: 90%;
+}
+
+.cube {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    width: 10vw;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.face_title {
+    font-size: 2.3vw;
+    color: var(--cube-color);
+    text-align: center;
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    backface-visibility: hidden;
+    background-color: var(--background-color);
+    transition: transform 1s;
+}
+
+
+
