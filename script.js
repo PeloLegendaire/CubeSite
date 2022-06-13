@@ -47,7 +47,7 @@ perspective_cube.appendChild(container);
 
 var nb_cube = 0;
 //const parties = ['front', 'right', 'left', 'back', 'top', 'bottom'];
-const parties = ['assistance', 'mode projet', 'disposition', 'présence', 'développement', 'gestion'];
+const parties = ['Skill 1', 'Skill 2', 'Skill 3', 'Skill 4', 'Skill 5', 'Skill 6'];
 var mots = [];
 
 const perspective_title = document.createElement('div');
